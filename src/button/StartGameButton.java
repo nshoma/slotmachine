@@ -1,4 +1,4 @@
-package slot;
+package button;
 
 import java.awt.Font;
 

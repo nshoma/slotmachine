@@ -16,13 +16,12 @@ public class MainGameWindow extends JFrame {
 		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(width, height);
-		add(startScreen);
-		setVisible(true);
+		contentpane.add(startScreen);
 	}
 	
 	public void change(JPanel panel) {
-		getContentPane().removeAll();
-		add(panel);
+		contentpane.removeAll();
+		contentpane.add(panel);
 		validate();
 		repaint();
 	}
